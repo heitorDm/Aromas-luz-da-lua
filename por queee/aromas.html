@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Aromas | Luz da Lua Aromas</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div class="topbar">✦ PALETA OLFATIVA LUZ DA LUA ✦</div>
+<header class="site-header"><a class="logo" href="index.html"><span class="logo-main">luz da lua</span><span class="logo-sub">A R O M A S</span></a><nav class="nav"><a href="index.html">Início</a><a href="produtos.html">Catálogo</a><a class="active" href="aromas.html">Aromas</a><a href="sobre.html">A essência</a><a href="carrinho.html">Carrinho</a></nav><div class="header-actions"><a href="conta.html" class="round-btn">♙</a><a href="carrinho.html" class="round-btn cart-link">♡<span class="cart-badge">0</span></a><button class="menu-btn">☰</button></div></header>
+<main>
+<section class="catalog-hero"><p class="eyebrow dark">A PALETA OLFATIVA</p><h1>Conheça os<br><em>aromas.</em></h1><p>Esta página usa as descrições e combinações que aparecem no catálogo, sem acrescentar notas que não foram informadas pela marca.</p></section>
+<section class="aromas-page section"><div class="aroma-page-grid" id="aromaGrid"></div></section>
+<section class="aroma-legend"><div><p class="eyebrow">COMO LER</p><h2>Do aroma individual<br><em>às criações da marca.</em></h2></div><p>O catálogo apresenta seis aromas como opções da coleção e três criações Luz da Lua com combinações específicas. As combinações abaixo seguem exatamente a nomenclatura encontrada no material enviado.</p></section>
+</main>
+<footer class="footer"><div><div class="logo-main">luz da lua</div><div class="logo-sub">A R O M A S</div><p>Aromas que conectam.</p></div><div><h4>Navegação</h4><a href="index.html">Início</a><a href="produtos.html">Catálogo</a><a href="sobre.html">A essência</a></div><div><h4>Compra</h4><a href="carrinho.html">Carrinho</a><a href="checkout.html">Checkout</a></div><div class="footer-bottom">© 2026 Luz da Lua Aromas</div></footer>
+<script src="js/data.js"></script><script src="js/app.js"></script><script>
+document.addEventListener("DOMContentLoaded",()=>{
+ const grid=document.getElementById("aromaGrid");
+ grid.innerHTML=AROMAS.map((a,i)=>`<article class="aroma-card ${a.type.includes("Criação")?"creation":""}">
+   <span class="aroma-number">${String(i+1).padStart(2,"0")}</span>
+   <div class="aroma-symbol">〰</div>
+   <small>${a.type}</small>
+   <h3>${a.name}</h3>
+   <p>${a.description}</p>
+ </article>`).join("");
+});
+</script>
+</body></html>

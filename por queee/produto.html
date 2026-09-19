@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Produto | Luz da Lua Aromas</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div class="topbar">✦ DETALHES DO PRODUTO ✦</div>
+<header class="site-header"><a class="logo" href="index.html"><span class="logo-main">luz da lua</span><span class="logo-sub">A R O M A S</span></a><nav class="nav"><a href="index.html">Início</a><a href="produtos.html">Catálogo</a><a class="active" href="produto.html?id=vela-140">Produto</a><a href="aromas.html">Aromas</a><a href="carrinho.html">Carrinho</a></nav><div class="header-actions"><a href="conta.html" class="round-btn">♙</a><a href="carrinho.html" class="round-btn cart-link">♡<span class="cart-badge">0</span></a><button class="menu-btn">☰</button></div></header>
+<main>
+<section class="product-detail">
+<div class="product-gallery"><div class="main-product-image"><img id="productImage" src="assets/vela-140g.png" alt=""></div><div class="thumbs" id="thumbs"></div></div>
+<div class="product-info-page">
+<p id="productCategory" class="eyebrow dark"></p>
+<h1 id="productName"></h1>
+<div class="rating">★★★★★ <span>produto artesanal</span></div>
+<p id="productDescription"></p>
+<div id="productDetails" class="product-details-text"></div>
+<div class="price-big" id="productPrice"></div>
+<div class="divider"></div>
+<label class="select-label">Aroma</label>
+<select id="aromaSelect"></select>
+<div class="aroma-help" id="aromaHelp"></div>
+<div class="quantity"><button id="minus">−</button><span id="qty">1</span><button id="plus">+</button></div>
+<button id="addProduct" class="btn gold wide">Adicionar ao carrinho</button><a href="#" data-product-whatsapp class="direct-wa">Tirar dúvida sobre este produto pelo WhatsApp</a>
+<div class="product-notes">
+<div><b>Composição</b><span id="composition"></span></div>
+<div><b>Informações</b><span>Consulte a ficha completa do produto e as condições de entrega no checkout.</span></div>
+</div>
+</div>
+</section>
+
+<section id="viewer3d" class="viewer-section">
+<div class="viewer-copy"><p class="eyebrow">EXPERIÊNCIA INTERATIVA</p><h2>Visualização<br><em>3D preparada.</em></h2><p>Esta versão usa a foto do produto com uma apresentação em perspectiva. O espaço já está separado para receber um modelo 3D real em GLB/GLTF posteriormente.</p><span class="viewer-hint">Controle de rotação abaixo</span></div>
+<div class="viewer"><div class="viewer-stage"><img id="viewerImg" src="assets/vela-140g.png" alt=""><div class="viewer-floor"></div></div><input id="rotation" type="range" min="-25" max="25" value="4"></div>
+</section>
+
+<section class="details-tabs"><button class="detail-tab active" data-tab="descricao">Descrição</button><button class="detail-tab" data-tab="especificacoes">Especificações</button><button class="detail-tab" data-tab="aroma">Aroma selecionado</button>
+<div class="detail-panel active" id="descricao">A página mostra as informações gerais disponibilizadas no catálogo para este produto.</div>
+<div class="detail-panel" id="especificacoes">As especificações completas podem receber do backend peso/volume, composição, estoque, cuidados, imagens adicionais e informações logísticas.</div>
+<div class="detail-panel" id="aroma">Selecione um aroma para ver sua informação correspondente.</div></section>
+</main>
+<footer class="footer"><div><div class="logo-main">luz da lua</div><div class="logo-sub">A R O M A S</div><p>Aromas que conectam.</p></div><div><h4>Navegação</h4><a href="index.html">Início</a><a href="produtos.html">Catálogo</a><a href="aromas.html">Aromas</a></div><div><h4>Compra</h4><a href="carrinho.html">Carrinho</a><a href="checkout.html">Checkout</a></div><div class="footer-bottom">© 2026 Luz da Lua Aromas</div></footer>
+<script src="js/data.js"></script><script src="js/app.js"></script><script src="js/product.js"></script>
+</body></html>
